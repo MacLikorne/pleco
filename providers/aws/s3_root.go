@@ -210,7 +210,7 @@ func DeleteExpiredBuckets(s3session s3.S3, tagName string, dryRun bool) {
 	}
 	var expiredBuckets []s3Bucket
 	for _, bucket := range buckets {
-		if utils.CheckIfExpired(bucket.CreateTime, bucket.TTL) && !bucket.IsProtected {
+		if utils.CheckIfExpired(bucket.CreateTime, bucket.TTL, "s3 bucket: " + bucket.Name) && !bucket.IsProtected {
 			expiredBuckets = append(expiredBuckets, bucket)
 		}
 	}
