@@ -1,11 +1,11 @@
-module github.com/Qovery/pleco/providers/aws
+module github.com/MacLikorne/pleco/providers/aws
 
 go 1.16
 
-replace github.com/Qovery/pleco/utils => ../../utils
+replace github.com/MacLikorne/pleco/utils => ../../utils
 
 require (
-	github.com/Qovery/pleco/utils v0.0.0-00010101000000-000000000000
+	github.com/MacLikorne/pleco/utils v0.0.0-00010101000000-000000000000
 	github.com/aws/aws-sdk-go v1.38.50
 	github.com/sirupsen/logrus v1.8.1
 	github.com/spf13/cobra v0.0.5
