@@ -1,8 +1,8 @@
 package core
 
 import (
-	"github.com/Qovery/pleco/providers/aws"
-	"github.com/Qovery/pleco/providers/k8s"
+	"github.com/MacLikorne/pleco/providers/aws"
+	"github.com/MacLikorne/pleco/providers/k8s"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"sync"

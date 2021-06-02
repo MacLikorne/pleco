@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/Qovery/pleco/core"
+	"github.com/MacLikorne/pleco/core"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 )

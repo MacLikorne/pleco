@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/Qovery/pleco/cmd"
+	"github.com/MacLikorne/pleco/cmd"
 )
 
 func main() {

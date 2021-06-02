@@ -1,4 +1,4 @@
-module github.com/Qovery/pleco/providers/k8s
+module github.com/MacLikorne/pleco/utils
 
 go 1.16
 

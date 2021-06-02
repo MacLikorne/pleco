@@ -3,7 +3,7 @@ package k8s
 import (
 	"context"
 	"fmt"
-	"github.com/Qovery/pleco/utils"
+	"github.com/MacLikorne/pleco/utils"
 	log "github.com/sirupsen/logrus"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
@@ -89,7 +89,7 @@ func DeleteExpiredNamespaces(clientSet *kubernetes.Clientset, tagName string, dr
 	}
 
 	for _, namespace := range namespaces {
-		if utils.CheckIfExpired(namespace.NamespaceCreateTime, namespace.TTL) {
+		if utils.CheckIfExpired(namespace.NamespaceCreateTime, namespace.TTL, namespace.Name) {
 			err := deleteNamespace(clientSet, namespace, dryRun)
 			if err != nil {
 				log.Errorf("error while trying to delete namespace: %s", err)
